@@ -1,0 +1,578 @@
+@charset "UTF-8";
+
+/* ************************************************************************
+* 
+*   共通
+*
+************************************************************************ */
+
+.transition{
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -ms-transition: all .3s;
+    transition: all .3s;
+}
+
+/* -------------- ヘッダー -------------- */
+
+header{
+    padding: 8px 0;
+    width: 100%;
+    color: #fff;
+    background: #000;
+}
+header .inner{
+    margin: 0 auto;
+    width: 1040px;
+    height: 37px;
+}
+header .headerTtl{
+    float: left;
+    width: 400px;
+}
+header h1{
+    float: left;
+    width: 124px;
+    height: 37px;
+}
+header #shopName{
+    float: left;
+    padding: 7px 0 0 0;
+    width: 276px;
+    height: 23px;
+}
+header #shopName h2{
+    display: table-cell;
+    padding: 0 0 0 20px;
+    vertical-align: middle;
+    border-left: 1px solid #444;
+}
+header #shopName h2 a{
+    color: #fff;
+    font-size: 14px;
+}
+header #shopName h2 a:hover{
+    color: #999;
+}
+header .headerNavi{
+    float: right;
+    width: 640px;
+}
+
+/* 言語メニュー */
+
+header .langNav{
+    float: right;
+    padding: 11px 40px 0 0;
+    text-align: right;
+}
+header .langNav li{
+    display: inline-block;
+}
+header .langNav li a{
+    display: table-cell;
+    padding: 0 20px;
+    font-size: 14px;
+    line-height: 1em;
+    color: #fff;
+    vertical-align: middle;
+    border-left: 1px solid #ccc;
+}
+header .langNav li:first-child a{
+    border-left: 0;
+}
+header .langNav li:last-child a{
+    padding: 0 0 0 20px;
+}
+header .langNav li a:hover{
+    color: #999;
+}
+
+/* 店舗メニュー */
+
+header .shopNav{
+    float: right;
+    width: 130px;
+    height: 37px;
+}
+header .shopNav dl{
+    position: relative;
+    display: block;
+}
+header .shopNav dl dt{
+    position: absolute;
+    display: block;
+    top:0px;
+    left:0px;
+    z-index: 100;
+}
+header .shopNav dl dt a{
+    display: table-cell;
+    padding: 0 15px;
+    width: 98px;
+    height: 35px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    vertical-align: middle;
+    border: 1px solid #444;
+    background: #000 url(../img/ic_arrow_down_wt_s.png) 105px center no-repeat;
+}
+header .shopNav dl dt a.hover{
+    color: #000;
+    border: 1px solid #ccc;
+    border-bottom: 1px solid #fff;
+    background: #fff url(../img/ic_arrow_down_bk_s.png) 105px center no-repeat;
+}
+header .shopNav dl dd{
+    display: none;
+    position: absolute;
+    top:36px;
+    left:-372px;
+    padding: 10px 30px;
+    width: 440px;
+    color: #000;
+    border: 1px solid #ccc;
+    background: #fff;
+    z-index: 99;
+    opacity: 0;
+    -ms-filter: "alpha(opacity=0)";
+}
+header .shopNav dl dd .area{
+    border-top: 1px solid #ccc;
+}
+header .shopNav dl dd .area.tokyo{
+    border-top: 0;
+}
+header .shopNav dl dd ul{
+    margin: 0 -10px 0 0;
+    padding: 10px 0;
+    width: 450px;
+    overflow: hidden;
+}
+header .shopNav dl dd ul li{
+    float: left;
+    margin: 0 10px 0 0;
+    padding: 10px 0;
+    width: 140px;
+}
+header .shopNav dl dd a{
+    display: block;
+    padding: 0 0 0 25px;
+    font-size: 12px;
+    line-height: 1.3em;
+    background: url(../../common/img/ic_arrow_right_bk_ss.png) 8px 1px no-repeat;
+}
+
+/* -------------- メインコンテンツ -------------- */
+
+.container{
+    margin: 0 auto;
+    padding: 20px 0 40px 0;
+    width: 100%;
+    min-width: 1040px;
+    background: #eee;
+    border-bottom: 1px solid #ccc;
+}
+.container .inner{
+    margin: 0 auto;
+    width: 1040px;
+}
+
+/* リンク */
+
+a.dotLine{
+    border-bottom: 1px dotted #000;
+}
+a:hover.dotLine{
+    color:#999;
+}
+
+/* -------------- ボトムスクリーン -------------- */
+
+#btmVisual{
+    position:relative;
+    margin: 0 0 40px 0;
+    width:1040px;
+    height: 205px;
+}
+#btmVisual .visualHolder{
+    position:relative;
+    margin: 0 auto;
+    width:996px;
+    height: 205px;
+    overflow: hidden;
+}
+#btmSlideItem{
+    position: absolute;
+    top:0px;
+    left: 0px;
+    z-index: 5;
+}
+#btmSlideItem li{
+    float: left;
+    padding: 0 11px;
+    width: 310px;
+    height: 205px;
+}
+#btmSlideNavi{
+    position: absolute;
+    z-index: 20;
+    top:0;
+    left:0;
+    width:1040px;
+}
+#btmSlideL{
+    display: none;
+    position: absolute;
+    top:90px;
+    left: 0;
+    width: 15px;
+    cursor: pointer;
+}
+#btmSlideR{
+    display: none;
+    position: absolute;
+    top:90px;
+    right: 0;
+    width: 15px;
+    cursor: pointer;
+}
+
+/* -------------- ボトムバナー -------------- */
+
+.btmBnr li{
+    float: left;
+    margin: 0 20px 0 0;
+    width: 245px;
+}
+.btmBnr li:last-child{
+    margin: 0;
+}
+.btmBnr li a{
+    display: block;
+    padding: 20px 0 0 0;
+    width: 245px;
+    height: 225px;
+    text-align: center;
+}
+.btmBnr li a h3{
+    display: inline-block;
+    padding: 0 0 8px 0;
+    font-size: 18px;
+    line-height: 1.4em;
+    font-weight: normal;
+    border-bottom: 2px solid #000;
+}
+.btmBnr li a.activityLink{
+    background: #fff url(../img/btmBnr_img_activity.jpg) center 90px no-repeat;
+}
+.btmBnr li a.producedLink{
+    background: #fff url(../img/btmBnr_img_produced.jpg) center 90px no-repeat;
+}
+.btmBnr li a.novelLink{
+    background: #fff url(../img/btmBnr_img_novel.jpg) center 90px no-repeat;
+}
+.btmBnr li a.dairyLink{
+    background: #fff url(../img/btmBnr_img_dairy.jpg) center 90px no-repeat;
+}
+.btmBnr li a.dairyLink h3{
+line-height: 2.8em;
+}
+
+.btmBnr li a:hover{
+    background-color: #f5f5f5;
+}
+
+/* -------------- ADエリア -------------- */
+
+.adArea{
+    margin: 40px 0 0 0;
+}
+
+/* -------------- フッター -------------- */
+
+footer{
+    width: 100%;
+    background: #fff;
+}
+footer .inner{
+    margin: 0 auto;
+    padding: 0 0 30px 0;
+    width: 1040px;
+}
+footer .footerTtl{
+    margin: 0 0 28px 0;
+    padding: 40px 0 0 0;
+}
+footer h1{
+    float: left;
+    width: 178px;
+}
+footer .sns{
+    float: right;
+    width: 165px;
+}
+footer .sns li{
+    float: left;
+    margin: 0 0 0 15px;
+    width: 40px;
+    font-size: 14px;
+    line-height: 1em;
+}
+footer .corpNav{
+    margin: 0 0 10px 0;
+}
+footer .corpNav li{
+    display: inline-block;
+    padding: 0 20px;
+    border-left: 1px solid #ccc;
+}
+footer .corpNav li:first-child{
+    padding: 0 20px 0 0;
+    border-left: 0;
+}
+footer .corpNav li a{
+    color: #000;
+}
+footer .corpNav li a:hover{
+    color: #999;
+}
+footer .corpNav li a img{
+	transition: all .3s;
+	position: relative;
+	top: 2px;
+	}
+footer .corpNav li a:hover img{
+	opacity: .5;
+	-ms-filter: "alpha(opacity=50)";
+	}
+footer .corpNav li.luminewingNav{
+    display: none;
+}
+footer .copy{
+    width: 100%;
+    height: 60px;
+    background: #000;
+}
+footer .copy p{
+    padding: 18px 0;
+    color: #fff;
+    text-align: center;
+    font-size: 10px;
+    font-weight: bold;
+}
+
+/* -------------- ページトップ -------------- */
+
+#pagetop{
+    display: none;
+    position: fixed;
+    bottom: -20px;
+    right: 0px;
+    width: 60px;
+    height: 60px;
+    z-index: 999;
+    opacity: 0;
+    -ms-filter: "alpha(opacity=0)";
+}
+
+/* -------------- セレクトボックス -------------- */
+
+select:-moz-focusring{
+    color: transparent;
+    text-shadow: 0 0 0 #000;
+}
+.select select{
+    cursor: pointer;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    text-overflow: ""; /*Firefox*/
+    margin: 0;
+    padding: 0;
+    vertical-align: middle;
+    box-sizing: content-box;
+    border: 0;
+}
+.select select:hover{
+    opacity: 0.4;
+}
+.select select::-ms-expand{
+    display: none;
+}
+.select.w237{
+    width:235px;
+    height: 35px;
+    overflow: hidden;
+    border: 1px solid #ccc;
+}
+.select.w237 select{
+    padding: 0 0 0 5px;
+    width:255px;
+    height: 35px;
+    font-size: 14px;
+    background: url(../img/ic_arrow_down_bk_s.png) 212px center no-repeat;
+}
+.ie8 .select.w237 select{
+    padding-top: 6px;
+    width: 226px;
+    height: 25px;
+    background:none;
+}
+.select.w223{
+    width:221px;
+    height: 35px;
+    overflow: hidden;
+    border: 1px solid #ccc;
+}
+.select.w223 select{
+    padding: 0 0 0 5px;
+    width:241px;
+    height: 35px;
+    font-size: 14px;
+    background: url(../img/ic_arrow_down_bk_s.png) 198px center no-repeat;
+}
+.ie8 .select.w223 select{
+    padding-top: 6px;
+    width: 212px;
+    height: 25px;
+    background:none;
+}
+.select.w200{
+    width:198px;
+    height: 35px;
+    overflow: hidden;
+    border: 1px solid #ccc;
+}
+.select.w200 select{
+    padding: 0 0 0 5px;
+    width:218px;
+    height: 35px;
+    font-size: 14px;
+    background: url(../img/ic_arrow_down_bk_s.png) 175px center no-repeat;
+}
+.ie8 .select.w200 select{
+    padding-top: 6px;
+    width: 189px;
+    height: 25px;
+    background:none;
+}
+.select.w200b{
+    width:200px;
+    height: 37px;
+    overflow: hidden;
+}
+.select.w200b select{
+    padding: 0 0 0 5px;
+    width:220px;
+    height: 37px;
+    font-size: 14px;
+    background: url(../img/ic_arrow_down_bk_s.png) 177px center no-repeat;
+}
+.ie8 .select.w200b select{
+    padding-top: 6px;
+    width: 220px;
+    height: 25px;
+    background:none;
+}
+.select.w193{
+    width:193px;
+    height: 37px;
+    overflow: hidden;
+    background: #fff;
+}
+.select.w193 select{
+    padding: 0 0 0 5px;
+    width:208px;
+    height: 37px;
+    font-size: 14px;
+    background: url(../img/ic_arrow_down_bk_s.png) 170px center no-repeat;
+}
+.ie8 .select.w193 select{
+    padding-top: 6px;
+    width: 184px;
+    height: 25px;
+    background:none;
+}
+
+/* -------------- カテゴリーアイコン -------------- */
+
+.cat1{
+    background: url(../../common_store/floormap/icon/icon_cat_01.png) 0 center no-repeat;
+}
+.cat2{
+    background: url(../../common_store/floormap/icon/icon_cat_02.png) 0 center no-repeat;
+}
+.cat3{
+    background: url(../../common_store/floormap/icon/icon_cat_03.png) 0 center no-repeat;
+}
+.cat4{
+    background: url(../../common_store/floormap/icon/icon_cat_04.png) 0 center no-repeat;
+}
+.cat5{
+    background: url(../../common_store/floormap/icon/icon_cat_05.png) 0 center no-repeat;
+}
+.cat6{
+    background: url(../../common_store/floormap/icon/icon_cat_06.png) 0 center no-repeat;
+}
+.cat7{
+    background: url(../../common_store/floormap/icon/icon_cat_07.png) 0 center no-repeat;
+}
+.cat8{
+    background: url(../../common_store/floormap/icon/icon_cat_08.png) 0 center no-repeat;
+}
+.cat9{
+    background: url(../../common_store/floormap/icon/icon_cat_09.png) 0 center no-repeat;
+}
+.cat10{
+    background: url(../../common_store/floormap/icon/icon_cat_10.png) 0 center no-repeat;
+}
+.cat11{
+    background: url(../../common_store/floormap/icon/icon_cat_11.png) 0 center no-repeat;
+}
+.cat12{
+    background: url(../../common_store/floormap/icon/icon_cat_12.png) 0 center no-repeat;
+}
+.cat13{
+    background: url(../../common_store/floormap/icon/icon_cat_13.png) 0 center no-repeat;
+}
+.cat14{
+    background: url(../../common_store/floormap/icon/icon_cat_14.png) 0 center no-repeat;
+}
+.cat15{
+    background: url(../../common_store/floormap/icon/icon_cat_15.png) 0 center no-repeat;
+}
+.cat16{
+    background: url(../../common_store/floormap/icon/icon_cat_16.png) 0 center no-repeat;
+}
+.cat17{
+    background: url(../../common_store/floormap/icon/icon_cat_17.png) 0 center no-repeat;
+}
+.cat18{
+    background: url(../../common_store/floormap/icon/icon_cat_18.png) 0 center no-repeat;
+}
+.cat19{
+    background: url(../../common_store/floormap/icon/icon_cat_19.png) 0 center no-repeat;
+}
+.cat20{
+    background: url(../../common_store/floormap/icon/icon_cat_20.png) 0 center no-repeat;
+}
+.cat21{
+    background: url(../../common_store/floormap/icon/icon_cat_21.png) 0 center no-repeat;
+}
+.cat22{
+    background: url(../../common_store/floormap/icon/icon_cat_22.png) 0 center no-repeat;
+}
+.cat23{
+    background: url(../../common_store/floormap/icon/icon_cat_23.png) 0 center no-repeat;
+}
+.cat24{
+    background: url(../../common_store/floormap/icon/icon_cat_24.png) 0 center no-repeat;
+}
+.cat27{
+    background: url(../../common_store/floormap/icon/icon_cat_18.png) 0 center no-repeat;
+}
+
+
+

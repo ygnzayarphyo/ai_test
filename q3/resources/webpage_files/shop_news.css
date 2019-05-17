@@ -1,0 +1,281 @@
+@charset "UTF-8";
+
+/* ************************************************************************
+*
+*   各館共通 - トピックス詳細
+*
+************************************************************************ */
+
+.mainContents h2.ttl.news{
+	line-height: 1.1em;
+    background: url(../img/icon_h_news.gif) 0 0 no-repeat;
+}
+
+/* -------------- 記事画像 -------------- */
+
+#newsImg{
+	margin: 0 0 30px 0;
+}
+#newsImg .mainImg{
+	float: left;
+	margin: 0 20px 0 0;
+	width: 580px;
+	height: 580px;
+	background: #eee;
+	overflow: hidden;
+}
+#newsImg .mainImg a{
+	cursor: default;
+}
+#newsImg .mainImg img{
+	display: block;
+	width: auto;
+	height: 580px;
+}
+#newsImg .thumb{
+	float: left;
+	width: 130px;
+}
+#newsImg .thumb li{
+	float: left;
+	margin: 0 0 20px 0;
+	width: 130px;
+	height: 130px;
+	background: #eee;
+	overflow: hidden;
+}
+#newsImg .thumb li:last-child{
+	margin: 0;
+}
+#newsImg .thumb li a{
+	display: block;
+	position: relative;
+}
+#newsImg .thumb li.active a:after,
+#newsImg .thumb li a:hover:after{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 10;
+	width: 126px;
+	height: 126px;
+	border: 2px solid #000;
+}
+#newsImg .thumb li a img{
+	display: block;
+	width: auto;
+	height: 130px;
+}
+
+/* -------------- 記事本文 -------------- */
+
+.mainContents .newsTxt{
+	margin: 0 0 40px 0;
+}
+
+.mainContents .newsTxt a{
+    color: #000;
+    text-decoration: none;
+    border-bottom: 1px dotted #000;
+}
+
+.mainContents .newsTxt a:hover{
+    opacity: 0.5;
+}
+
+/* youtube area START */
+.mainContents .newsTxt .newsMovie{
+    margin: 40px 0 0 0;
+}
+.mainContents .newsTxt .movieTxt{
+    margin: 20px 0 0 0;
+}
+/* youtube area END */
+
+/* -------------- ショップ情報 -------------- */
+
+.mainContents .shopInfo{
+	margin: 0 0 40px 0;
+}
+.mainContents .shopInfo .list{
+    display: table;
+    padding: 10px 0;
+    border-bottom: 1px solid #ccc;
+}
+.mainContents .shopInfo .list:first-child{
+    border-top: 1px solid #ccc;
+}
+.mainContents .shopInfo .list .label{
+    display: table-cell;
+    width: 160px;
+    text-align: center;
+    vertical-align: middle;
+    border-right: 1px solid #ccc;
+}
+.mainContents .shopInfo .list .txt{
+    display: table-cell;
+    padding: 10px 20px;
+    width: 530px;
+    text-align: left;
+    vertical-align: middle;
+}
+
+/* -------------- ページナビ -------------- */
+
+.mainContents .btmNavi{
+	margin: 0 0 40px 0;
+}
+.mainContents .btmNavi li{
+	float: left;
+	margin: 0 20px 0 0;
+	width: 355px;
+}
+.mainContents .btmNavi li:last-child{
+	margin: 0;
+}
+.mainContents .btmNavi a{
+    display: table-cell;
+    padding: 0 0 0 40px;
+	width: 313px;
+	height: 80px;
+    font-size: 20px;
+    text-align: center;
+    vertical-align: middle;
+	border: 1px solid #ccc;
+}
+.mainContents .btmNavi .twLink{
+    background: #fff url(../img/b_tw.png) 57px center no-repeat;
+}
+.mainContents .btmNavi .twLink:hover{
+    background: #f5f5f5 url(../img/b_tw.png) 57px center no-repeat;
+}
+.mainContents .btmNavi .fbLink{
+    background: #fff url(../img/b_fb.png) 57px center no-repeat;
+}
+.mainContents .btmNavi .fbLink:hover{
+    background: #f5f5f5 url(../img/b_fb.png) 57px center no-repeat;
+}
+.mainContents .shopLink{
+	margin: 0 auto 40px auto;
+	width: 403px;
+}
+.mainContents .shopLink a{
+    display: table-cell;
+    padding: 10px 25px 10px 10px;
+	width: 364px;
+	min-height: 39px;
+    font-size: 16px;
+    vertical-align: middle;
+    text-align: center;
+	border: 2px solid #000;
+    background: #fff url(../img/ic_arrow_right_bk_s.png) 378px center no-repeat;
+}
+.mainContents .shopLink a:hover{
+    color: #fff;
+    background: #000 url(../img/ic_arrow_right_wt_s.png) 378px center no-repeat;
+}
+
+/* -------------- その他のニュース -------------- */
+
+.mainContents .otherNews ul li{
+	float: left;
+	margin: 0 20px 0 0;
+	width: 355px;
+	border-top: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+    overflow: hidden;
+}
+.mainContents .otherNews ul li:nth-child(even){
+	margin: 0;
+}
+.mainContents .otherNews ul li:nth-child(3),
+.mainContents .otherNews ul li:nth-child(4){
+	border-top: 0;
+}
+.mainContents .otherNews .topics{
+	display: block;
+	padding: 20px 10px;
+	background: #fff;
+}
+.mainContents .otherNews .topics:hover{
+    background: #f5f5f5;
+}
+.mainContents .otherNews .topics .topicsImg{
+    float: left;
+    width: 110px;
+    height: 90px;
+    overflow: hidden;
+}
+.mainContents .otherNews .topics .topicsImg img{
+    width: 90px;
+    height: auto;
+    vertical-align: top;
+}
+.mainContents .otherNews .topics .topicsInfo{
+    display: table-cell;
+    width: 225px;
+    height: 90px;
+    font-size: 14px;
+    line-height: 1.4em;
+    vertical-align: middle;
+}
+.mainContents .otherNews .topics .topicsInfo .date{
+    display: block;
+    color: #999;
+    font-size: 12px;
+}
+.mainContents .otherNews .readMoreLink{
+    margin: 0 auto;
+    padding: 50px 0 10px 0;
+    width:189px;
+}
+.mainContents .otherNews .readMoreLink a{
+    display: table-cell;
+    width:189px;
+    height: 39px;
+    overflow: hidden;
+    color: #000;
+    font-size: 16px;
+    text-align: center;
+    vertical-align: middle;
+    border: 2px solid #000;
+    background: url(../img/ic_arrow_right_bk_s.png) 166px center no-repeat;
+}
+.mainContents .otherNews .readMoreLink a:hover{
+    color: #fff;
+    background: #000 url(../img/ic_arrow_right_wt_s.png) 166px center no-repeat;
+}
+
+/* -------------- 記事がない場合 -------------- */
+
+.mainContents .noTopics{
+    padding: 40px 0;
+    text-align: center;
+    font-size: 16px;
+}
+.mainContents .noTopics .ttl{
+	margin: 0 0 40px 0;
+    font-size: 20px;
+}
+.mainContents .backLink{
+    margin: 0 auto;
+    padding: 70px 0 10px 0;
+    width:189px;
+}
+.mainContents .backLink a{
+    display: table-cell;
+    width:189px;
+    height: 39px;
+    overflow: hidden;
+    color: #000;
+    font-size: 16px;
+    text-align: center;
+    vertical-align: middle;
+    border: 2px solid #000;
+    background: url(../img/ic_arrow_right_bk_s.png) 166px center no-repeat;
+}
+.mainContents .backLink a:hover{
+    color: #fff;
+    background: #000 url(../img/ic_arrow_right_wt_s.png) 166px center no-repeat;
+}

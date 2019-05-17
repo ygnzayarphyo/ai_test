@@ -1,0 +1,655 @@
+@charset "UTF-8";
+
+/* ************************************************************************
+*
+*   各館共通
+*
+************************************************************************ */
+
+/* -------------- ショップコンテナ -------------- */
+
+.shopContainer{
+    margin: 0 0 40px 0;
+}
+
+/* -------------- サイドエリア -------------- */
+
+.side{
+    float: left;
+    width: 250px;
+}
+
+/* -------------- メインエリア -------------- */
+
+.main{
+    float: left;
+    width: 790px;
+}
+.main .mainContents{
+    padding: 30px;
+    background: #fff;
+}
+
+/* -------------- コンテンツスクリーン -------------- */
+
+#visual{
+    position:relative;
+    width:230px;
+    /*height: 365px;*/
+    height: 210px;
+    overflow: hidden;
+}
+#slideItem{
+    position: absolute;
+    top:0px;
+    left: 0px;
+    z-index: 5;
+}
+#slideItem li{
+    float: left;
+    width: 230px;
+    /*height: 325px;*/
+    height: 175px;
+    overflow: hidden;
+}
+#slideItem li img{
+    width: 100%;
+    height: auto;
+}
+#slidePoint{
+    display: none;
+    position: relative;
+    /*top:335px;*/
+    top:185px;
+    left:0px;
+    height: 10px;
+}
+#slidePoint ul{
+    position: relative;
+    left: 50%;
+    float:left;
+}
+#slidePoint ul li{
+    display:block;
+    position: relative;
+    left: -50%;
+    float:left;
+    margin: 0 5px;
+    width:10px;
+    height:10px;
+    border-radius: 50%;
+    background: #d6d6d6;
+    cursor: pointer;
+}
+#slidePoint ul li.active{
+    background: #151515;
+}
+
+/* -------------- サイドナビ -------------- */
+
+.sideNav{
+    padding: 0 0 10px 0;
+}
+.sideNav li{
+    display: block;
+    margin: 0 0 10px 0;
+    width: 238px;
+}
+.sideNav li a{
+    display: block;
+    width: 230px;
+    height: 74px;
+    background: #fff url(../../common/img/ic_arrow_right_bk_s.png) 207px center no-repeat;
+}
+.sideNav li a.foreigner{
+    display: block;
+    margin: 1px 0 0 0;
+    width: 230px;
+    height: 58px;
+    background: #f7f7f7 url(../../common/img/ic_arrow_right_gray_s.png) 207px center no-repeat;
+}
+.sideNav li a span{
+    display: table-cell;
+    padding: 0 0 0 72px;
+    width: 158px;
+    height: 74px;
+    color: #000;
+    font-size: 14px;
+    line-height: 1.2em;
+    vertical-align: middle;
+}
+.sideNav li a.foreigner span{
+    display: table-cell;
+    padding: 0 0 0 20px;
+    width: 210px;
+    height: 58px;
+    color: #666;
+    font-size: 12px;
+    line-height: 1.2em;
+    vertical-align: middle;
+    background: none !important;
+}
+
+/* 各メニュー */
+
+.sideNav li.floor a span{
+    background: url(../../common/img/icon_floor_m.png) 7px center no-repeat;
+}
+.sideNav li.restaurant a span{
+    background: url(../../common/img/icon_restaurant_m.png) 7px center no-repeat;
+}
+.sideNav li.cosme a span{
+    background: url(../../common/img/icon_cosme_m.png) 7px center no-repeat;
+}
+.sideNav li.shop a span{
+    background: url(../../common/img/icon_shop_m.png) 7px center no-repeat;
+}
+.sideNav li.newshop a span{
+    background: url(../../common/img/icon_newshop_m.png) 7px center no-repeat;
+}
+.sideNav li.recruit a span{
+    background: url(../../common/img/icon_recruit_m.png) 7px center no-repeat;
+}
+.sideNav li.card a span{
+    background: url(../../common/img/icon_card_m.png) 7px center no-repeat;
+}
+
+/* ホバー時 */
+
+.sideNav li a:hover{
+    background: #666 url(../../common/img/ic_arrow_right_wt_s.png) 207px center no-repeat;
+}
+.sideNav li a:hover span{
+    color: #fff;
+}
+.sideNav li.floor a:hover span{
+    background: url(../../common/img/icon_floor_m_active.png) 7px center no-repeat;
+}
+.sideNav li.restaurant a:hover span{
+    background: url(../../common/img/icon_restaurant_m_active.png) 7px center no-repeat;
+}
+.sideNav li.cosme a:hover span{
+    background: url(../../common/img/icon_cosme_m_active.png) 7px center no-repeat;
+}
+.sideNav li.shop a:hover span{
+    background: url(../../common/img/icon_shop_m_active.png) 7px center no-repeat;
+}
+.sideNav li.newshop a:hover span{
+    background: url(../../common/img/icon_newshop_m_active.png) 7px center no-repeat;
+}
+.sideNav li.recruit a:hover span{
+    background: url(../../common/img/icon_recruit_m_active.png) 7px center no-repeat;
+}
+.sideNav li.card a:hover span{
+    background: url(../../common/img/icon_card_m_active.png) 7px center no-repeat;
+}
+
+/* アクティブ時 */
+
+.sideNav li.active{
+    background: url(../../common/img/ic_side_dir_right.png) right 29px no-repeat;
+}
+.sideNav li.active a{
+    background: #666;
+}
+.sideNav li.active a span{
+    color: #fff;
+    font-weight: bold;
+}
+.sideNav li.floor.active a span{
+    background: url(../../common/img/icon_floor_m_active.png) 7px center no-repeat;
+}
+.sideNav li.restaurant.active a span{
+    background: url(../../common/img/icon_restaurant_m_active.png) 7px center no-repeat;
+}
+.sideNav li.cosme.active a span{
+    background: url(../../common/img/icon_cosme_m_active.png) 7px center no-repeat;
+}
+.sideNav li.shop.active a span{
+    background: url(../../common/img/icon_shop_m_active.png) 7px center no-repeat;
+}
+.sideNav li.newshop.active a span{
+    background: url(../../common/img/icon_newshop_m_active.png) 7px center no-repeat;
+}
+.sideNav li.recruit.active a span{
+    background: url(../../common/img/icon_recruit_m_active.png) 7px center no-repeat;
+}
+.sideNav li.card.active a span{
+    background: url(../../common/img/icon_card_m_active.png) 7px center no-repeat;
+}
+
+/* -------------- SNSナビ -------------- */
+
+.sideNav.sns{
+    padding: 20px 0 0 0;
+    width: 230px;
+    border-top: 1px solid #c9c9c9;
+}
+.sideNav li.fb a span{
+    background: url(../../common/img/icon_fb_m.png) 7px center no-repeat;
+}
+.sideNav li.tw a span{
+    background: url(../../common/img/icon_tw_m.png) 7px center no-repeat;
+}
+.sideNav li.insta a span{
+    background: url(../../common/img/icon_insta_m.png) 7px center no-repeat;
+}
+.sideNav li.fb a:hover span{
+    background: url(../../common/img/icon_fb_m_active.png) 7px center no-repeat;
+}
+.sideNav li.tw a:hover span{
+    background: url(../../common/img/icon_tw_m_active.png) 7px center no-repeat;
+}
+.sideNav li.insta a:hover span{
+    background: url(../../common/img/icon_insta_m_active.png) 7px center no-repeat;
+}
+
+/* -------------- トップ　店舗情報 -------------- */
+
+.infoArea{
+    margin: 0 0 30px 0;
+    background: #fff;
+}
+.infoArea .infoHeader{
+    float: left;
+    margin: 0 30px;
+    padding: 50px 0 0 0;
+    width: 223px;
+    text-align: center;
+}
+.infoArea .infoHeader h2{
+    display: inline-block;
+    margin: 0 0 48px 0;
+    padding: 75px 0 10px 0;
+    font-size: 18px;
+    line-height: 1em;
+    font-weight: normal;
+    background: url(../../common/img/icon_shop_ml.png) center 0 no-repeat;
+    border-bottom: 2px solid #000;
+}
+.infoArea .infoHeader ul{
+    margin: 0 0 30px 0;
+}
+.infoArea .infoHeader ul li{
+    display: block;
+    margin: 0 0 5px 0;
+}
+.infoArea .infoHeader ul li a{
+    display: table-cell;
+    width:219px;
+    height: 35px;
+    overflow: hidden;
+    color: #000;
+    font-size: 14px;
+    text-align: center;
+    vertical-align: middle;
+    border: 2px solid #000;
+    background: url(../../common/img/ic_arrow_right_bk_s.png) 198px center no-repeat;
+}
+.infoArea .infoHeader ul li:nth-child(3) a {
+    height: 130px;
+}
+.infoArea .infoHeader ul li:nth-child(3) a.onelng {
+    height: 35px;
+}
+
+.infoArea .infoHeader ul li a:hover{
+    color: #fff;
+    background: #000 url(../../common/img/ic_arrow_right_wt_s.png) 198px center no-repeat;
+}
+
+.infoArea .infoBody{
+    float: left;
+    padding: 30px 0;
+    width: 477px;
+}
+.infoArea .infoBody .infoCol{
+    display: table;
+    padding: 10px 0;
+    border-bottom: 1px solid #ccc;
+}
+.infoArea .infoBody .infoCol:first-child{
+    border-top: 1px solid #ccc;
+}
+.infoArea .infoBody .infoCol .label{
+    display: table-cell;
+    width: 96px;
+    text-align: center;
+    vertical-align: middle;
+    border-right: 1px solid #ccc;
+}
+.infoArea .infoBody .infoCol .infoTxt{
+    display: table-cell;
+    padding: 10px 0 10px 20px;
+    width: 360px;
+    text-align: left;
+    vertical-align: middle;
+}
+.infoTxt td {
+    vertical-align: top;
+}
+
+.infoArea .infoBody .infoCol .infoTxt .btnTime{
+    display: table;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+.infoArea .infoBody .infoCol .infoTxt .btnTime a{
+    display: table-cell;
+    width:236px;
+    height: 35px;
+    overflow: hidden;
+    color: #000;
+    font-size: 13px;
+    text-align: center;
+    vertical-align: middle;
+
+}
+.infoArea .infoBody .infoCol .infoTxt .btnClose a{
+    color: #fff;
+    border: 2px solid #da414d;
+    background: #da414d url(../../common/img/ic_arrow_right_wt_s.png) 216px center no-repeat ;
+
+}
+.infoArea .infoBody .infoCol .infoTxt .btnYear a{
+    color: #c8161e;
+    border: 2px solid #c8161e;
+    background: #fff url(../../common/img/ic_arrow_right_rd_s.png) 216px center no-repeat;
+}
+/* -------------- サイドエリア　ショップ検索 -------------- */
+
+.side .searchArea{
+    margin: 0 0 20px 0;
+    width: 230px;
+    background: #fff;
+}
+.side .searchArea .searchHeader{
+    width: 230px;
+}
+.side .searchArea .searchHeader .searchTtl{
+    padding: 39px 0 0 0;
+    text-align: center;
+}
+.side .searchArea .searchHeader .searchTtl h2{
+    display: inline-block;
+    margin: 0 0 40px 0;
+    padding: 72px 0 8px 0;
+    font-size: 18px;
+    line-height: 1em;
+    font-weight: normal;
+    background: url(../img/icon_search_m.png) center 0 no-repeat;
+    border-bottom: 2px solid #000;
+}
+.side .searchArea .searchHeader .shopSearch{
+    margin: 0 auto 15px auto;
+    width: 200px;
+}
+.side .searchArea .searchBody{
+    padding: 5px 15px;
+    width: 200px;
+    background: #666 url(../img/ic_dir_down.gif) center 0 no-repeat;
+}
+.side .searchArea .searchBody .searchSection{
+    padding: 15px 0 20px 0;
+    border-top: 1px solid #858585;
+}
+.side .searchArea .searchBody .searchSection:first-child{
+    border-top: 0px;
+}
+.side .searchArea .searchBody .searchSection .label{
+    margin: 0 0 8px 0;
+    width: 200px;
+    color: #fff;
+    font-size: 14px;
+    vertical-align: middle;
+}
+.side .searchArea .searchBody .searchSection .inputForm{
+    width: 200px;
+    height: 37px;
+    background: #fff;
+}
+.side .searchArea .searchBody .searchSection .inputForm .searchTxt{
+    float: left;
+    width: 163px;
+    height: 37px;
+    overflow: hidden;
+}
+.side .searchArea .searchBody .searchSection .inputForm .searchTxt input[type="text"]{
+    display: table-cell;
+    margin:4px 10px;
+    width:148px;
+    height: 29px;
+    font-size: 14px;
+    vertical-align: middle;
+    border: 0px;
+}
+.ie8 .side .searchArea .searchBody .searchSection .inputForm .searchTxt input[type="text"]{
+    margin-top: 8px;
+}
+.side .searchArea .searchBody .searchSection .searchBtn{
+    float: left;
+    width:37px;
+    height: 37px;
+    overflow: hidden;
+    background: #fff;
+    cursor: pointer;
+}
+.side .searchArea .searchBody .searchSection .searchBtn:hover{
+    opacity: 0.6;
+}
+.side .searchArea .searchBody .searchSection #searchIndexLink,
+.side .searchArea .searchBody .searchSection #searchFloorLink{
+    display: table-cell;
+    width: 200px;
+    height: 37px;
+    overflow: hidden;
+    padding: 0 10px;
+    color: #000;
+    font-size: 14px;
+    vertical-align: middle;
+    background: #fff url(../img/ic_arrow_right_bk_s.png) 177px center no-repeat;
+}
+.side .searchArea .searchBody .searchSection #searchIndexLink:hover,
+.side .searchArea .searchBody .searchSection #searchFloorLink:hover{
+    color: #fff;
+    background: #000 url(../img/ic_arrow_right_wt_s.png) 177px center no-repeat;
+}
+.side .searchArea .searchBody .searchSection .selectForm{
+    display: table-cell;
+    width: 200px;
+    height: 37px;
+}
+.side .searchArea .searchBody .searchSection .selectForm .select{
+    margin: 0 0 5px 0;
+    width: 200px;
+    background: #fff;
+}
+.side .searchArea .searchBody .searchSection .searchBtn.rSide{
+    float: right;
+}
+.side .searchArea .searchBody .searchSection #searchFloorLink.unable{
+    color: #999;
+    background: #ccc url(../../common/img/ic_arrow_right_gray_s.png) 177px center no-repeat;
+}
+.side .searchArea .searchBody .searchSection #searchFloorLink.unable:hover{
+    color: #999;
+    background: #ccc url(../../common/img/ic_arrow_right_gray_s.png) 177px center no-repeat;
+}
+
+/* -------------- トップ　トピックス／トピックス一覧 -------------- */
+
+.shopTopics{
+    display: none;
+    margin: 0 0 30px 0;
+}
+#shop{
+    margin: 0;
+}
+.shopTopics h3{
+    display: inline-block;
+    margin: 0 0 20px 0;
+    padding: 1px 0 1px 30px;
+    font-size: 20px;
+    line-height: 1em;
+    font-weight: normal;
+    background: url(../img/ic_circle.png) 0 center no-repeat;
+}
+.shopTopics .topicsBody{
+    padding: 30px;
+    background: #fff;
+}
+.shopTopics .topicsBody .topics,
+.topicsList .topics{
+    display: block;
+    padding: 20px 10px;
+    border-bottom: 1px solid #ccc;
+}
+.shopTopics .topicsBody .topics:first-child,
+.topicsList .topics:first-child{
+    border-top: 1px solid #ccc;
+}
+.ie8 .shopTopics .topicsBody .topics.fc,
+.ie8 .topicsList .topics.fc{
+    border-top: 1px solid #ccc;
+}
+.shopTopics .topicsBody .topics:hover,
+.topicsList .topics:hover{
+    background: #f5f5f5;
+}
+.shopTopics .topicsBody .topics .topicsImg,
+.topicsList .topics .topicsImg{
+    float: left;
+    width: 190px;
+    height: 160px;
+    overflow: hidden;
+}
+.shopTopics .topicsBody .topics .topicsImg img,
+.topicsList .topics .topicsImg img{
+    width: 160px;
+    height: auto;
+    vertical-align: top;
+}
+.shopTopics .topicsBody .topics .topicsInfo,
+.topicsList .topics .topicsInfo{
+    display: table-cell;
+    width: 520px;
+    height: 160px;
+    font-size: 16px;
+    vertical-align: middle;
+}
+.shopTopics .topicsBody .topics .topicsInfo .topicsLabel .date,
+.topicsList .topics .topicsInfo .topicsLabel .date{
+    display: inline-block;
+    vertical-align: top;
+    margin:0 0 10px 0;
+    color: #999;
+    font-size: 14px;
+}
+.shopTopics .topicsBody .topics .topicsInfo .topicsLabel .newIcon,
+.topicsList .topics .topicsInfo .topicsLabel .newIcon{
+    display: inline-block;
+    vertical-align: top;
+    margin:0 0 0 6px;
+}
+.shopTopics .readMoreLink{
+    margin: 0 auto;
+    padding: 30px 0 0 0;
+    width:189px;
+}
+.shopTopics .readMoreLink a{
+    display: table-cell;
+    width:189px;
+    height: 39px;
+    overflow: hidden;
+    color: #000;
+    font-size: 16px;
+    text-align: center;
+    vertical-align: middle;
+    border: 2px solid #000;
+    background: url(../img/ic_arrow_right_bk_s.png) 166px center no-repeat;
+}
+.shopTopics .readMoreLink a:hover{
+    color: #fff;
+    background: #000 url(../img/ic_arrow_right_wt_s.png) 166px center no-repeat;
+}
+
+/* -------------- ADエリア -------------- */
+
+.adArea{
+    margin: 30px 0 0 0;
+}
+
+/* -------------- 下層　コンテンツ -------------- */
+
+.mainContents h2.ttl{
+    margin: 0 0 30px 0;
+    padding: 0 0 15px 0;
+    min-height: 76px;
+    font-size: 28px;
+    border-bottom: 2px solid #000;
+}
+.mainContents h2.ttl span{
+    display: table-cell;
+    padding: 0 0 0 95px;
+    height: 76px;
+    vertical-align: middle;
+}
+.mainContents h2.ttl span small{
+    display: block;
+    margin: 8px 0 0 0;
+    color: #666;
+    font-size: 12px;
+    line-height: 1em;
+    font-weight: normal;
+}
+.mainContents h3{
+    display: inline-block;
+    margin: 0 0 20px 0;
+    padding: 1px 0 1px 30px;
+    font-size: 20px;
+    line-height: 1em;
+    font-weight: normal;
+    background: url(../img/ic_circle.png) 0 center no-repeat;
+}
+.mainContents h3.new{
+    display: inline-block;
+    margin: 0 0 20px 0;
+    padding: 6px 6px 6px 30px;
+    font-size: 20px;
+    line-height: 1em;
+    font-weight: normal;
+    background: url(../img/ic_circle2.png) 6px center no-repeat;
+    background-color: #000;
+    color: #FFF;
+}
+.mainContents .lead{
+    margin: 0 0 30px 0;
+    font-size: 14px;
+}
+
+/* -------------- LUMINE WING　会社情報 -------------- */
+
+.coSec.wing .infoList .infoBody .link{
+    text-align: center;
+}
+.coSec.wing .infoList .infoBody .link p{
+    display: inline-block;
+    margin: 25px 0 0 0;
+}
+.coSec.wing .infoList .infoBody .link p a{
+    display: table-cell;
+    width:219px;
+    height: 35px;
+    overflow: hidden;
+    color: #000;
+    font-size: 14px;
+    text-align: center;
+    vertical-align: middle;
+    border: 2px solid #000;
+    background: url(../../common/img/ic_arrow_right_bk_s.png) 198px center no-repeat;
+}
+.coSec.wing .infoList .infoBody .link p a:hover{
+    color: #fff;
+    background: #000 url(../../common/img/ic_arrow_right_wt_s.png) 198px center no-repeat;
+}

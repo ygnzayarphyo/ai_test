@@ -1,0 +1,57 @@
+@charset "UTF-8";
+
+/* ************************************************************************
+*
+*   Base
+*
+************************************************************************ */
+
+body{
+    margin:0px;
+    padding:0px;
+    color:#000;
+    font-size:14px;
+    line-height:1.6em;
+    word-break: break-all;
+    font-family: "メイリオ","Meiryo","ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro",Sans-Serif;
+    background:#fff;
+}
+div, form, input, h1, h2, h3, h4, h5, h6, p, ul, ol, li, dl, dt, dd, hr{
+    margin:0px;
+    padding:0px;
+}
+article, aside, footer, header, nav, section {
+    margin:0px;
+    padding:0px;
+    display: block;
+}
+ul{
+    list-style:none;
+}
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+img{
+    border:none;
+}
+i{
+    font-style:normal !important;
+}
+a:link, a:visited{
+    color:#000;
+    text-decoration:none;
+}
+a:hover, a:active{
+    color:#000;
+}
+.clear{
+    overflow:hidden;
+    _zoom:1;
+}
+.clearfix:after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
